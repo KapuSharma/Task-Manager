@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FaCheck, FaPencilAlt, FaPlus, FaSearch, FaTrash } from 'react-icons/fa';
 import { ToastContainer } from 'react-toastify';
-import { CreateTask, DeleteTaskById, GetAllTasks, UpdateTaskById } from './api';
-import { notify } from './utils';
+import { CreateTask, DeleteTaskById, GetAllTasks, UpdateTaskById } from './api.jsx';
+import { notify } from './utils.jsx';
 function TaskManager() {
     const [input, setInput] = useState('');
     const [tasks, setTasks] = useState([]);

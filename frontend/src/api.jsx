@@ -1,4 +1,4 @@
-import { API_URL } from "./utils"
+import { API_URL } from "./utils.jsx"
 
 
 export const CreateTask = async (taskObj) => {

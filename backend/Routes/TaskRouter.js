@@ -3,15 +3,15 @@ const { createTask, fetchAllTasks, updateTaskById, deleteTaskById } = require('.
 const router = require('express').Router();
 
 // To get all the tasks
-router.get('/api/tasks', fetchAllTasks);
+router.get('/', fetchAllTasks);
 
 // To create a task
-router.post('/api/tasks', createTask);
+router.post('/', createTask);
 
 // To update a task
-router.put('/api/tasks/:id', updateTaskById);
+router.put('/:id', updateTaskById);
 
 // To delete a task
-router.delete('/api/tasks/:id', deleteTaskById);
+router.delete('/:id', deleteTaskById);
 
 module.exports = router;
